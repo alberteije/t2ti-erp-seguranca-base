@@ -1,0 +1,51 @@
+
+Unexpected Signal : EXCEPTION_ACCESS_VIOLATION occurred at PC=0x6d44848b
+Function name=(N/A)
+Library=C:\java\jdk1.3.1\jre\bin\hotspot\jvm.dll
+
+NOTE: We are unable to locate the function name symbol for the error
+      just occurred. Please refer to release documentation for possible
+      reason and solutions.
+
+
+
+Current Java thread:
+	at com.ice.jni.registry.RegistryKey.openSubKey(Native Method)
+	at com.ice.jni.registry.Registry.openSubKeyVerbose(Registry.java:1046)
+	at com.ice.jni.registry.Registry.listKeysCommand(Registry.java:854)
+	at com.ice.jni.registry.Registry.subMain(Registry.java:603)
+	at com.ice.jni.registry.Registry.main(Registry.java:369)
+
+Dynamic libraries:
+0x00400000 - 0x00405000 	C:\java\jdk1.3.1\bin\java.exe
+0x77F50000 - 0x77FF7000 	C:\WINDOWS\System32\ntdll.dll
+0x77E60000 - 0x77F46000 	C:\WINDOWS\system32\kernel32.dll
+0x77DD0000 - 0x77E5D000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x78000000 - 0x78086000 	C:\WINDOWS\system32\RPCRT4.dll
+0x77C10000 - 0x77C63000 	C:\WINDOWS\system32\MSVCRT.dll
+0x6D420000 - 0x6D4F7000 	C:\java\jdk1.3.1\jre\bin\hotspot\jvm.dll
+0x77D40000 - 0x77DC6000 	C:\WINDOWS\system32\USER32.dll
+0x77C70000 - 0x77CB0000 	C:\WINDOWS\system32\GDI32.dll
+0x76B40000 - 0x76B6C000 	C:\WINDOWS\System32\WINMM.dll
+0x629C0000 - 0x629C8000 	C:\WINDOWS\System32\LPK.DLL
+0x72FA0000 - 0x72FFA000 	C:\WINDOWS\System32\USP10.dll
+0x6D220000 - 0x6D227000 	C:\java\jdk1.3.1\jre\bin\hpi.dll
+0x6D3B0000 - 0x6D3BD000 	C:\java\jdk1.3.1\jre\bin\verify.dll
+0x6D250000 - 0x6D266000 	C:\java\jdk1.3.1\jre\bin\java.dll
+0x6D3C0000 - 0x6D3CD000 	C:\java\jdk1.3.1\jre\bin\zip.dll
+0x10000000 - 0x1002A000 	C:\src\ice\windows\jniregistry\Debug\ICE_JNIRegistry.dll
+0x76C90000 - 0x76CB2000 	C:\WINDOWS\system32\imagehlp.dll
+0x6D510000 - 0x6D58D000 	C:\WINDOWS\system32\DBGHELP.dll
+0x77C00000 - 0x77C07000 	C:\WINDOWS\system32\VERSION.dll
+0x76BF0000 - 0x76BFB000 	C:\WINDOWS\System32\PSAPI.DLL
+
+Local Time = Mon Apr 21 12:29:09 2003
+Elapsed Time = 1214
+#
+# HotSpot Virtual Machine Error : EXCEPTION_ACCESS_VIOLATION
+# Error ID : 4F530E43505002BD
+# Please report this error at
+# http://java.sun.com/cgi-bin/bugreport.cgi
+#
+# Java VM: Java HotSpot(TM) Client VM (1.3.1_04-b02 mixed mode)
+#

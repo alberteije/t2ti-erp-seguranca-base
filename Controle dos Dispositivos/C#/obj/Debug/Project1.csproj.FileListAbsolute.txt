@@ -1,0 +1,16 @@
+C:\Projetos\Segurança\Controle de Pagamentos\C#\obj\Debug\Project1.csprojResolveAssemblyReference.cache
+C:\Projetos\Segurança\Controle de Pagamentos\C#\obj\Debug\Seguranca.Form1.resources
+C:\Projetos\Segurança\Controle de Pagamentos\C#\obj\Debug\Project1.csproj.GenerateResource.Cache
+C:\Projetos\Segurança\Controle de Pagamentos\C#\bin\Debug\Project1.exe
+C:\Projetos\Segurança\Controle de Pagamentos\C#\bin\Debug\Project1.pdb
+C:\Projetos\Segurança\Controle de Pagamentos\C#\obj\Debug\Project1.exe
+C:\Projetos\Segurança\Controle de Pagamentos\C#\obj\Debug\Project1.pdb
+C:\Projetos\Segurança\Controle de Pagamentos\C#\bin\Debug\MySql.Data.dll
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\obj\Debug\Project1.exe
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\obj\Debug\Project1.pdb
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\obj\Debug\Project1.csprojResolveAssemblyReference.cache
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\obj\Debug\Seguranca.Form1.resources
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\obj\Debug\Project1.csproj.GenerateResource.Cache
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\bin\Debug\Project1.exe
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\bin\Debug\Project1.pdb
+C:\Projetos\Segurança\Controle dos Dispositivos\C#\bin\Debug\MySql.Data.dll

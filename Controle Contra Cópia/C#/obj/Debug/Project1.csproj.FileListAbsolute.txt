@@ -1,0 +1,9 @@
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Project1.csproj.GenerateResource.Cache
+C:\Projetos\Segurança\Controle Contra Cópia\C#\bin\Debug\Project1.exe
+C:\Projetos\Segurança\Controle Contra Cópia\C#\bin\Debug\Project1.pdb
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Project1.exe
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Project1.pdb
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Seguranca.Form1.resources
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Project1.csprojResolveAssemblyReference.cache
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Interop.Scripting.dll
+C:\Projetos\Segurança\Controle Contra Cópia\C#\obj\Debug\Project1.csproj.ResolveComReference.cache

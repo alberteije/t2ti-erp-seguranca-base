@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="Project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="62"/>
+        <CursorPos X="1" Y="281"/>
+        <FoldState Value=" TJiV192 pk6kL1U2~"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Biblioteca.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Biblioteca"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="678"/>
+        <CursorPos X="1" Y="712"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="0" HistoryIndex="-1"/>
+  </ProjectSession>
+  <SkipCheckLCLInterfaces Value="True"/>
+  <EditorMacros Count="0"/>
+</CONFIG>

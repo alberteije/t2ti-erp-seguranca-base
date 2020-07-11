@@ -1,0 +1,195 @@
+object Form1: TForm1
+  Left = 525
+  Height = 430
+  Top = 227
+  Width = 632
+  Caption = 'T2Ti - Segurança'
+  ClientHeight = 430
+  ClientWidth = 632
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 49
+    Top = 0
+    Width = 632
+    Align = alTop
+    Caption = 'Controle dos Dispositivos'
+    Color = clSilver
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 515
+    Height = 25
+    Top = 313
+    Width = 109
+    Caption = 'Inserir'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 123
+    Top = 144
+    Width = 616
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 2
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 25
+    Top = 269
+    Width = 616
+    Caption = 'Consultar Dispositivos Cadastrados no Banco de Dados'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object EditComandoRecebido: TLabeledEdit
+    Left = 8
+    Height = 21
+    Top = 71
+    Width = 616
+    EditLabel.AnchorSideLeft.Control = EditComandoRecebido
+    EditLabel.AnchorSideRight.Control = EditComandoRecebido
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = EditComandoRecebido
+    EditLabel.Left = 8
+    EditLabel.Height = 13
+    EditLabel.Top = 55
+    EditLabel.Width = 616
+    EditLabel.Caption = 'Comando Recebido da Aplicação Cliente:'
+    EditLabel.ParentColor = False
+    TabOrder = 4
+    Text = 'http://localhost:8090/cgi-bin/usuario/c400a910c264e53bbcbe87a9acbbd193'
+  end
+  object EditIdDispositivoCliente: TLabeledEdit
+    Left = 8
+    Height = 21
+    Top = 119
+    Width = 370
+    EditLabel.AnchorSideLeft.Control = EditIdDispositivoCliente
+    EditLabel.AnchorSideRight.Control = EditIdDispositivoCliente
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = EditIdDispositivoCliente
+    EditLabel.Left = 8
+    EditLabel.Height = 13
+    EditLabel.Top = 103
+    EditLabel.Width = 370
+    EditLabel.Caption = 'Identificação do Dispositivo Cliente:'
+    EditLabel.ParentColor = False
+    TabOrder = 5
+    Text = 'c400a910c264e53bbcbe87a9acbbd193'
+  end
+  object EditQuantidade: TLabeledEdit
+    Left = 384
+    Height = 21
+    Top = 119
+    Width = 240
+    Alignment = taRightJustify
+    EditLabel.AnchorSideLeft.Control = EditQuantidade
+    EditLabel.AnchorSideRight.Control = EditQuantidade
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = EditQuantidade
+    EditLabel.Left = 384
+    EditLabel.Height = 13
+    EditLabel.Top = 103
+    EditLabel.Width = 240
+    EditLabel.Caption = 'Quantidade Máxima de Dispositivos Permitidos:'
+    EditLabel.ParentColor = False
+    TabOrder = 6
+    Text = '3'
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 122
+    Top = 300
+    Width = 501
+    Caption = 'Dispositivos na Sessão:'
+    ClientHeight = 104
+    ClientWidth = 497
+    TabOrder = 7
+    object Memo1: TMemo
+      Left = 0
+      Height = 104
+      Top = 0
+      Width = 497
+      Align = alClient
+      TabOrder = 0
+    end
+  end
+  object Button3: TButton
+    Left = 515
+    Height = 25
+    Top = 344
+    Width = 109
+    Caption = 'Consultar'
+    OnClick = Button3Click
+    TabOrder = 8
+  end
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Port = 0
+    left = 264
+    top = 56
+  end
+  object ZTable1: TZTable
+    Connection = Conexao
+    TableName = 'computador'
+    left = 320
+    top = 56
+    object ZTable1id: TIntegerField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZTable1a: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'a'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1b: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'b'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+  end
+  object DataSource1: TDatasource
+    DataSet = ZTable1
+    left = 392
+    top = 56
+  end
+end

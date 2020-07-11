@@ -1,0 +1,341 @@
+object Form1: TForm1
+  Left = 575
+  Height = 430
+  Top = 246
+  Width = 632
+  Caption = 'T2Ti - Segurança'
+  ClientHeight = 430
+  ClientWidth = 632
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 49
+    Top = 0
+    Width = 632
+    Align = alTop
+    Caption = 'Controle da Quantidade de Lançamentos'
+    Color = clSilver
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 381
+    Top = 49
+    Width = 632
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Via Banco'
+      ClientHeight = 355
+      ClientWidth = 624
+      object Label1: TLabel
+        Left = 3
+        Height = 13
+        Top = 135
+        Width = 180
+        Caption = 'Quantidade Máxima de Lançamentos:'
+        ParentColor = False
+      end
+      object Button1: TButton
+        Left = 397
+        Height = 25
+        Top = 325
+        Width = 109
+        Caption = 'Inserir'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object DBGrid1: TDBGrid
+        Left = 3
+        Height = 126
+        Top = 3
+        Width = 618
+        Color = clWindow
+        Columns = <>
+        DataSource = DataSource1
+        TabOrder = 1
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+      end
+      object EditMes: TLabeledEdit
+        Left = 3
+        Height = 21
+        Top = 287
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditMes
+        EditLabel.AnchorSideRight.Control = EditMes
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditMes
+        EditLabel.Left = 3
+        EditLabel.Height = 13
+        EditLabel.Top = 271
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Mês [a]:'
+        EditLabel.ParentColor = False
+        TabOrder = 2
+      end
+      object EditAno: TLabeledEdit
+        Left = 3
+        Height = 21
+        Top = 329
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditAno
+        EditLabel.AnchorSideRight.Control = EditAno
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditAno
+        EditLabel.Left = 3
+        EditLabel.Height = 13
+        EditLabel.Top = 313
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Ano [b]:'
+        EditLabel.ParentColor = False
+        TabOrder = 3
+      end
+      object EditVencimento: TLabeledEdit
+        Left = 79
+        Height = 21
+        Top = 287
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditVencimento
+        EditLabel.AnchorSideRight.Control = EditVencimento
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditVencimento
+        EditLabel.Left = 79
+        EditLabel.Height = 13
+        EditLabel.Top = 271
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Vencimento [c]:'
+        EditLabel.ParentColor = False
+        TabOrder = 4
+      end
+      object EditBloqueio: TLabeledEdit
+        Left = 79
+        Height = 21
+        Top = 329
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditBloqueio
+        EditLabel.AnchorSideRight.Control = EditBloqueio
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditBloqueio
+        EditLabel.Left = 79
+        EditLabel.Height = 13
+        EditLabel.Top = 313
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Bloqueio [d]:'
+        EditLabel.ParentColor = False
+        TabOrder = 5
+      end
+      object EditLiberado: TLabeledEdit
+        Left = 155
+        Height = 21
+        Top = 329
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditLiberado
+        EditLabel.AnchorSideRight.Control = EditLiberado
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditLiberado
+        EditLabel.Left = 155
+        EditLabel.Height = 13
+        EditLabel.Top = 313
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Liberado [e]:'
+        EditLabel.ParentColor = False
+        TabOrder = 6
+      end
+      object Button2: TButton
+        Left = 512
+        Height = 25
+        Top = 325
+        Width = 109
+        Caption = 'Consultar'
+        OnClick = Button2Click
+        TabOrder = 7
+      end
+      object EditNomeTabela: TLabeledEdit
+        Left = 397
+        Height = 21
+        Top = 288
+        Width = 224
+        EditLabel.AnchorSideLeft.Control = EditNomeTabela
+        EditLabel.AnchorSideRight.Control = EditNomeTabela
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditNomeTabela
+        EditLabel.Left = 397
+        EditLabel.Height = 13
+        EditLabel.Top = 272
+        EditLabel.Width = 224
+        EditLabel.Caption = 'Nome Tabela:'
+        EditLabel.ParentColor = False
+        TabOrder = 8
+        Text = 'controle_pagamento'
+      end
+      object DBGrid2: TDBGrid
+        Left = 3
+        Height = 111
+        Top = 154
+        Width = 618
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'id'
+            FieldName = 'id'
+          end        
+          item
+            Title.Caption = 'a'
+            Width = 200
+            FieldName = 'a'
+          end        
+          item
+            Title.Caption = 'b'
+            FieldName = 'b'
+          end>
+        DataSource = Datasource2
+        TabOrder = 9
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+      end
+    end
+  end
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    Port = 0
+    left = 272
+    top = 80
+  end
+  object ZTable1: TZTable
+    Connection = Conexao
+    TableName = 'controle_pagamento'
+    left = 328
+    top = 80
+    object ZTable1id: TIntegerField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZTable1a: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'a'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1b: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'b'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1c: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'c'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1d: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'd'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1e: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'e'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1f: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'f'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+  end
+  object DataSource1: TDatasource
+    DataSet = ZTable1
+    left = 568
+    top = 80
+  end
+  object BufDataset2: TBufDataset
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = 4
+        Size = 4
+      end    
+      item
+        Name = 'a'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end    
+      item
+        Name = 'b'
+        DataType = ftString
+        Precision = 0
+        Size = 4
+      end>
+    left = 438
+    top = 248
+  end
+  object Datasource2: TDatasource
+    DataSet = BufDataset2
+    left = 532
+    top = 253
+  end
+end

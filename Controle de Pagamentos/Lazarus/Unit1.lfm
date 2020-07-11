@@ -1,0 +1,518 @@
+object Form1: TForm1
+  Left = 627
+  Height = 430
+  Top = 221
+  Width = 632
+  Caption = 'T2Ti - Segurança'
+  ClientHeight = 430
+  ClientWidth = 632
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 49
+    Top = 0
+    Width = 632
+    Align = alTop
+    Caption = 'Controle de Pagamentos'
+    Color = clSilver
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 381
+    Top = 49
+    Width = 632
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Via Banco'
+      ClientHeight = 355
+      ClientWidth = 624
+      object Button1: TButton
+        Left = 397
+        Height = 25
+        Top = 325
+        Width = 109
+        Caption = 'Inserir'
+        OnClick = Button1Click
+        TabOrder = 0
+      end
+      object DBGrid1: TDBGrid
+        Left = 3
+        Height = 126
+        Top = 3
+        Width = 618
+        Color = clWindow
+        Columns = <>
+        DataSource = DataSource1
+        TabOrder = 1
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+      end
+      object EditMes: TLabeledEdit
+        Left = 3
+        Height = 21
+        Top = 287
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditMes
+        EditLabel.AnchorSideRight.Control = EditMes
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditMes
+        EditLabel.Left = 3
+        EditLabel.Height = 13
+        EditLabel.Top = 271
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Mês [a]:'
+        EditLabel.ParentColor = False
+        TabOrder = 2
+      end
+      object EditAno: TLabeledEdit
+        Left = 3
+        Height = 21
+        Top = 329
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditAno
+        EditLabel.AnchorSideRight.Control = EditAno
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditAno
+        EditLabel.Left = 3
+        EditLabel.Height = 13
+        EditLabel.Top = 313
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Ano [b]:'
+        EditLabel.ParentColor = False
+        TabOrder = 3
+      end
+      object EditVencimento: TLabeledEdit
+        Left = 79
+        Height = 21
+        Top = 287
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditVencimento
+        EditLabel.AnchorSideRight.Control = EditVencimento
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditVencimento
+        EditLabel.Left = 79
+        EditLabel.Height = 13
+        EditLabel.Top = 271
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Vencimento [c]:'
+        EditLabel.ParentColor = False
+        TabOrder = 4
+      end
+      object EditBloqueio: TLabeledEdit
+        Left = 79
+        Height = 21
+        Top = 329
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditBloqueio
+        EditLabel.AnchorSideRight.Control = EditBloqueio
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditBloqueio
+        EditLabel.Left = 79
+        EditLabel.Height = 13
+        EditLabel.Top = 313
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Bloqueio [d]:'
+        EditLabel.ParentColor = False
+        TabOrder = 5
+      end
+      object EditLiberado: TLabeledEdit
+        Left = 155
+        Height = 21
+        Top = 329
+        Width = 70
+        EditLabel.AnchorSideLeft.Control = EditLiberado
+        EditLabel.AnchorSideRight.Control = EditLiberado
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditLiberado
+        EditLabel.Left = 155
+        EditLabel.Height = 13
+        EditLabel.Top = 313
+        EditLabel.Width = 70
+        EditLabel.Caption = 'Liberado [e]:'
+        EditLabel.ParentColor = False
+        TabOrder = 6
+      end
+      object Button2: TButton
+        Left = 512
+        Height = 25
+        Top = 325
+        Width = 109
+        Caption = 'Consultar'
+        OnClick = Button2Click
+        TabOrder = 7
+      end
+      object Memo1: TMemo
+        Left = 3
+        Height = 130
+        Top = 135
+        Width = 502
+        TabOrder = 8
+      end
+      object Button3: TButton
+        Left = 511
+        Height = 25
+        Top = 135
+        Width = 110
+        Caption = 'Decifrar'
+        OnClick = Button3Click
+        TabOrder = 9
+      end
+      object Button4: TButton
+        Left = 511
+        Height = 25
+        Top = 166
+        Width = 110
+        Caption = 'Verificar Hash'
+        OnClick = Button4Click
+        TabOrder = 10
+      end
+      object Button5: TButton
+        Left = 511
+        Height = 25
+        Top = 209
+        Width = 110
+        Caption = 'Verificar Adimplência'
+        OnClick = Button5Click
+        TabOrder = 11
+      end
+      object Button6: TButton
+        Left = 511
+        Height = 25
+        Top = 240
+        Width = 110
+        Caption = 'Chave Desbloqueio'
+        OnClick = Button6Click
+        TabOrder = 12
+      end
+      object Button7: TButton
+        Left = 511
+        Height = 25
+        Top = 286
+        Width = 110
+        Caption = 'Desbloquear Sistema'
+        OnClick = Button7Click
+        TabOrder = 13
+      end
+      object EditChaveDesbloqueio: TLabeledEdit
+        Left = 304
+        Height = 21
+        Top = 288
+        Width = 201
+        EditLabel.AnchorSideLeft.Control = EditChaveDesbloqueio
+        EditLabel.AnchorSideRight.Control = EditChaveDesbloqueio
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditChaveDesbloqueio
+        EditLabel.Left = 304
+        EditLabel.Height = 13
+        EditLabel.Top = 272
+        EditLabel.Width = 201
+        EditLabel.Caption = 'Chave Desbloqueio:'
+        EditLabel.ParentColor = False
+        TabOrder = 14
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Via Arquivo'
+      ClientHeight = 355
+      ClientWidth = 624
+      ImageIndex = 1
+      object DBGrid2: TDBGrid
+        Left = 3
+        Height = 126
+        Top = 3
+        Width = 618
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'id'
+            FieldName = 'id'
+          end        
+          item
+            Title.Caption = 'a'
+            Width = 70
+            FieldName = 'a'
+          end        
+          item
+            Title.Caption = 'b'
+            Width = 70
+            FieldName = 'b'
+          end        
+          item
+            Title.Caption = 'c'
+            Width = 70
+            FieldName = 'c'
+          end        
+          item
+            Title.Caption = 'd'
+            Width = 70
+            FieldName = 'd'
+          end        
+          item
+            Title.Caption = 'e'
+            Width = 70
+            FieldName = 'e'
+          end        
+          item
+            Title.Caption = 'f'
+            Width = 150
+            FieldName = 'f'
+          end>
+        DataSource = DataSource2
+        TabOrder = 0
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+      end
+      object Memo2: TMemo
+        Left = 3
+        Height = 130
+        Top = 135
+        Width = 502
+        TabOrder = 1
+      end
+      object EditChaveDesbloqueioArquivo: TLabeledEdit
+        Left = 304
+        Height = 21
+        Top = 287
+        Width = 201
+        EditLabel.AnchorSideLeft.Control = EditChaveDesbloqueioArquivo
+        EditLabel.AnchorSideRight.Control = EditChaveDesbloqueioArquivo
+        EditLabel.AnchorSideRight.Side = asrBottom
+        EditLabel.AnchorSideBottom.Control = EditChaveDesbloqueioArquivo
+        EditLabel.Left = 304
+        EditLabel.Height = 13
+        EditLabel.Top = 271
+        EditLabel.Width = 201
+        EditLabel.Caption = 'Chave Desbloqueio:'
+        EditLabel.ParentColor = False
+        TabOrder = 2
+      end
+      object Button8: TButton
+        Left = 511
+        Height = 25
+        Top = 283
+        Width = 110
+        Caption = 'Desbloquear Sistema'
+        OnClick = Button8Click
+        TabOrder = 3
+      end
+      object Button10: TButton
+        Left = 511
+        Height = 25
+        Top = 325
+        Width = 109
+        Caption = 'Inserir'
+        OnClick = Button10Click
+        TabOrder = 4
+      end
+      object Button11: TButton
+        Left = 511
+        Height = 25
+        Top = 135
+        Width = 110
+        Caption = 'Decifrar'
+        OnClick = Button11Click
+        TabOrder = 5
+      end
+      object Button12: TButton
+        Left = 511
+        Height = 25
+        Top = 166
+        Width = 110
+        Caption = 'Verificar Hash'
+        OnClick = Button12Click
+        TabOrder = 6
+      end
+      object Button13: TButton
+        Left = 511
+        Height = 25
+        Top = 209
+        Width = 110
+        Caption = 'Verificar Adimplência'
+        OnClick = Button13Click
+        TabOrder = 7
+      end
+      object Button14: TButton
+        Left = 511
+        Height = 25
+        Top = 240
+        Width = 110
+        Caption = 'Chave Desbloqueio'
+        OnClick = Button14Click
+        TabOrder = 8
+      end
+    end
+  end
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'teste'
+    User = 'root'
+    Password = 'root'
+    Protocol = 'mysql'
+    left = 152
+    top = 96
+  end
+  object ZTable1: TZTable
+    Connection = Conexao
+    TableName = 'controle_pagamento'
+    left = 208
+    top = 96
+    object ZTable1id: TIntegerField
+      DisplayWidth = 10
+      FieldKind = fkData
+      FieldName = 'id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZTable1a: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'a'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1b: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'b'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1c: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'c'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1d: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'd'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1e: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'e'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+    object ZTable1f: TStringField
+      DisplayWidth = 32
+      FieldKind = fkData
+      FieldName = 'f'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 32
+    end
+  end
+  object DataSource1: TDatasource
+    DataSet = ZTable1
+    left = 272
+    top = 96
+  end
+  object BufDataset2: TBufDataset
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = 4
+        Size = 4
+      end    
+      item
+        Name = 'a'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end    
+      item
+        Name = 'b'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end    
+      item
+        Name = 'c'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end    
+      item
+        Name = 'd'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end    
+      item
+        Name = 'e'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end    
+      item
+        Name = 'f'
+        DataType = ftString
+        Precision = 0
+        Size = 32
+      end>
+    left = 468
+    top = 153
+  end
+  object DataSource2: TDatasource
+    DataSet = BufDataset2
+    left = 564
+    top = 153
+  end
+end

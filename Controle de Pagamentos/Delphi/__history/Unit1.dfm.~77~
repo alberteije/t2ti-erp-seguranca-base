@@ -1,0 +1,495 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'T2Ti - Seguran'#231'a'
+  ClientHeight = 430
+  ClientWidth = 632
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 632
+    Height = 49
+    Align = alTop
+    Caption = 'Controle de Pagamentos'
+    Color = clSilver
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 49
+    Width = 632
+    Height = 381
+    ActivePage = TabSheet2
+    Align = alClient
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Via Banco'
+      ExplicitLeft = -12
+      object Button1: TButton
+        Left = 397
+        Top = 325
+        Width = 109
+        Height = 25
+        Caption = 'Inserir'
+        TabOrder = 0
+        OnClick = Button1Click
+      end
+      object DBGrid1: TDBGrid
+        Left = 3
+        Top = 3
+        Width = 618
+        Height = 126
+        DataSource = DataSource1
+        TabOrder = 1
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object EditMes: TLabeledEdit
+        Left = 3
+        Top = 287
+        Width = 70
+        Height = 21
+        EditLabel.Width = 40
+        EditLabel.Height = 13
+        EditLabel.Caption = 'M'#234's [a]:'
+        TabOrder = 2
+      end
+      object EditAno: TLabeledEdit
+        Left = 3
+        Top = 329
+        Width = 70
+        Height = 21
+        EditLabel.Width = 40
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Ano [b]:'
+        TabOrder = 3
+      end
+      object EditVencimento: TLabeledEdit
+        Left = 79
+        Top = 287
+        Width = 70
+        Height = 21
+        EditLabel.Width = 75
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Vencimento [c]:'
+        TabOrder = 4
+      end
+      object EditBloqueio: TLabeledEdit
+        Left = 79
+        Top = 329
+        Width = 70
+        Height = 21
+        EditLabel.Width = 61
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Bloqueio [d]:'
+        TabOrder = 5
+      end
+      object EditLiberado: TLabeledEdit
+        Left = 155
+        Top = 329
+        Width = 70
+        Height = 21
+        EditLabel.Width = 62
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Liberado [e]:'
+        TabOrder = 6
+      end
+      object Button2: TButton
+        Left = 512
+        Top = 325
+        Width = 109
+        Height = 25
+        Caption = 'Consultar'
+        TabOrder = 7
+        OnClick = Button2Click
+      end
+      object Memo1: TMemo
+        Left = 3
+        Top = 135
+        Width = 502
+        Height = 130
+        TabOrder = 8
+      end
+      object Button3: TButton
+        Left = 511
+        Top = 135
+        Width = 110
+        Height = 25
+        Caption = 'Decifrar'
+        TabOrder = 9
+        OnClick = Button3Click
+      end
+      object Button4: TButton
+        Left = 511
+        Top = 166
+        Width = 110
+        Height = 25
+        Caption = 'Verificar Hash'
+        TabOrder = 10
+        OnClick = Button4Click
+      end
+      object Button5: TButton
+        Left = 511
+        Top = 209
+        Width = 110
+        Height = 25
+        Caption = 'Verificar Adimpl'#234'ncia'
+        TabOrder = 11
+        OnClick = Button5Click
+      end
+      object Button6: TButton
+        Left = 511
+        Top = 240
+        Width = 110
+        Height = 25
+        Caption = 'Chave Desbloqueio'
+        TabOrder = 12
+        OnClick = Button6Click
+      end
+      object Button7: TButton
+        Left = 511
+        Top = 286
+        Width = 110
+        Height = 25
+        Caption = 'Desbloquear Sistema'
+        TabOrder = 13
+        OnClick = Button7Click
+      end
+      object EditChaveDesbloqueio: TLabeledEdit
+        Left = 304
+        Top = 288
+        Width = 201
+        Height = 21
+        EditLabel.Width = 96
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Chave Desbloqueio:'
+        TabOrder = 14
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Via Arquivo'
+      ImageIndex = 1
+      object DBGrid2: TDBGrid
+        Left = 3
+        Top = 3
+        Width = 618
+        Height = 126
+        DataSource = DataSource2
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object Memo2: TMemo
+        Left = 3
+        Top = 135
+        Width = 502
+        Height = 130
+        TabOrder = 1
+      end
+      object LabeledEdit6: TLabeledEdit
+        Left = 304
+        Top = 287
+        Width = 201
+        Height = 21
+        EditLabel.Width = 96
+        EditLabel.Height = 13
+        EditLabel.Caption = 'Chave Desbloqueio:'
+        TabOrder = 2
+      end
+      object Button8: TButton
+        Left = 511
+        Top = 283
+        Width = 110
+        Height = 25
+        Caption = 'Desbloquear Sistema'
+        TabOrder = 3
+      end
+      object Button9: TButton
+        Left = 511
+        Top = 325
+        Width = 109
+        Height = 25
+        Caption = 'Consultar'
+        TabOrder = 4
+      end
+      object Button10: TButton
+        Left = 396
+        Top = 325
+        Width = 109
+        Height = 25
+        Caption = 'Inserir'
+        TabOrder = 5
+        OnClick = Button10Click
+      end
+      object Button11: TButton
+        Left = 511
+        Top = 135
+        Width = 110
+        Height = 25
+        Caption = 'Decifrar'
+        TabOrder = 6
+        OnClick = Button11Click
+      end
+      object Button12: TButton
+        Left = 511
+        Top = 166
+        Width = 110
+        Height = 25
+        Caption = 'Verificar Hash'
+        TabOrder = 7
+      end
+      object Button13: TButton
+        Left = 511
+        Top = 209
+        Width = 110
+        Height = 25
+        Caption = 'Verificar Adimpl'#234'ncia'
+        TabOrder = 8
+      end
+      object Button14: TButton
+        Left = 511
+        Top = 240
+        Width = 110
+        Height = 25
+        Caption = 'Chave Desbloqueio'
+        TabOrder = 9
+      end
+    end
+  end
+  object Conexao: TSQLConnection
+    DriverName = 'MySQL'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverUnit=Data.DBXMySQL'
+      
+        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver190.' +
+        'bpl'
+      
+        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
+        'nd.Data.DbxCommonDriver,Version=19.0.0.0,Culture=neutral,PublicK' +
+        'eyToken=91d62ebb5b0d1b1b'
+      
+        'MetaDataPackageLoader=TDBXMySqlMetaDataCommandFactory,DbxMySQLDr' +
+        'iver190.bpl'
+      
+        'MetaDataAssemblyLoader=Borland.Data.TDBXMySqlMetaDataCommandFact' +
+        'ory,Borland.Data.DbxMySQLDriver,Version=19.0.0.0,Culture=neutral' +
+        ',PublicKeyToken=91d62ebb5b0d1b1b'
+      'GetDriverFunc=getSQLDriverMYSQL'
+      'LibraryName=dbxmys.dll'
+      'LibraryNameOsx=libsqlmys.dylib'
+      'VendorLib=LIBMYSQL.dll'
+      'VendorLibWin64=libmysql.dll'
+      'VendorLibOsx=libmysqlclient.dylib'
+      'HostName=localhost'
+      'Database=teste'
+      'User_Name=root'
+      'Password=root'
+      'MaxBlobSize=-1'
+      'LocaleCode=0000'
+      'Compressed=False'
+      'Encrypted=False'
+      'BlobSize=-1'
+      'ErrorResourceFile=')
+    Connected = True
+    Left = 152
+    Top = 96
+  end
+  object SQLTable1: TSQLTable
+    MaxBlobSize = -1
+    SQLConnection = Conexao
+    TableName = 'controle_pagamento'
+    Left = 208
+    Top = 96
+    object SQLTable1id: TIntegerField
+      FieldName = 'id'
+    end
+    object SQLTable1a: TStringField
+      FieldName = 'a'
+      FixedChar = True
+      Size = 32
+    end
+    object SQLTable1b: TStringField
+      FieldName = 'b'
+      FixedChar = True
+      Size = 32
+    end
+    object SQLTable1c: TStringField
+      FieldName = 'c'
+      FixedChar = True
+      Size = 32
+    end
+    object SQLTable1d: TStringField
+      FieldName = 'd'
+      FixedChar = True
+      Size = 32
+    end
+    object SQLTable1e: TStringField
+      FieldName = 'e'
+      FixedChar = True
+      Size = 32
+    end
+    object SQLTable1f: TStringField
+      FieldName = 'f'
+      FixedChar = True
+      Size = 32
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ClientDataSet1
+    Left = 448
+    Top = 96
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetProvider1'
+    Left = 372
+    Top = 97
+    object ClientDataSet1id: TIntegerField
+      FieldName = 'id'
+    end
+    object ClientDataSet1a: TStringField
+      FieldName = 'a'
+      FixedChar = True
+      Size = 32
+    end
+    object ClientDataSet1b: TStringField
+      FieldName = 'b'
+      FixedChar = True
+      Size = 32
+    end
+    object ClientDataSet1c: TStringField
+      FieldName = 'c'
+      FixedChar = True
+      Size = 32
+    end
+    object ClientDataSet1d: TStringField
+      FieldName = 'd'
+      FixedChar = True
+      Size = 32
+    end
+    object ClientDataSet1e: TStringField
+      FieldName = 'e'
+      FixedChar = True
+      Size = 32
+    end
+    object ClientDataSet1f: TStringField
+      FieldName = 'f'
+      FixedChar = True
+      Size = 32
+    end
+  end
+  object DataSetProvider1: TDataSetProvider
+    DataSet = SQLTable1
+    Left = 284
+    Top = 97
+  end
+  object ClientDataSet2: TClientDataSet
+    Active = True
+    Aggregates = <>
+    FileName = 'C:\Projetos\Seguran'#231'a\Controle de Pagamentos\Delphi\fake.dll'
+    FieldDefs = <
+      item
+        Name = 'id'
+        DataType = ftInteger
+      end
+      item
+        Name = 'a'
+        DataType = ftString
+        Size = 32
+      end
+      item
+        Name = 'b'
+        DataType = ftString
+        Size = 32
+      end
+      item
+        Name = 'c'
+        DataType = ftString
+        Size = 32
+      end
+      item
+        Name = 'd'
+        DataType = ftString
+        Size = 32
+      end
+      item
+        Name = 'e'
+        DataType = ftString
+        Size = 32
+      end
+      item
+        Name = 'f'
+        DataType = ftString
+        Size = 32
+      end>
+    IndexDefs = <>
+    Params = <>
+    StoreDefs = True
+    Left = 468
+    Top = 153
+    Data = {
+      A90000009619E0BD010000001800000007000000000003000000A90002696404
+      0001000000000001610100490000000100055749445448020002002000016201
+      0049000000010005574944544802000200200001630100490000000100055749
+      4454480200020020000164010049000000010005574944544802000200200001
+      6501004900000001000557494454480200020020000166010049000000010005
+      57494454480200020020000000}
+    object ClientDataSet2id: TIntegerField
+      FieldName = 'id'
+    end
+    object ClientDataSet2a: TStringField
+      FieldName = 'a'
+      Size = 32
+    end
+    object ClientDataSet2b: TStringField
+      FieldName = 'b'
+      Size = 32
+    end
+    object ClientDataSet2c: TStringField
+      FieldName = 'c'
+      Size = 32
+    end
+    object ClientDataSet2d: TStringField
+      FieldName = 'd'
+      Size = 32
+    end
+    object ClientDataSet2e: TStringField
+      FieldName = 'e'
+      Size = 32
+    end
+    object ClientDataSet2f: TStringField
+      FieldName = 'f'
+      Size = 32
+    end
+  end
+  object DataSource2: TDataSource
+    DataSet = ClientDataSet2
+    Left = 564
+    Top = 153
+  end
+end
