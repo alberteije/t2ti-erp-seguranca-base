@@ -1,13 +1,16 @@
 <html>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 <div class="bloco">
                     <div class="titulo_bloco">
                         <h1>T2Ti ERP Segurança Base</h1>
-                    </div>
-  
-  <center>
-                    <img src="http://t2ti.com/images/capas/capa_erp2_infra_seguranca_base_250.jpg" />
-  <center>
-	<br /><br />
+                    </div> 
+                   <img src="http://t2ti.com/images/capas/capa_erp2_infra_seguranca_base_250.jpg" class="center"/>
+  	<br /><br />
   
   Esse material é parte integrante do treinamento T2Ti ERP. Os vídeos referentes a esse código podem ser vistos no youtube no seguinte link: https://www.youtube.com/playlist?list=PLMqoOoxxICPcnRyFbFWZrT8c3SetJ1uFg
 	<br /><br />
