@@ -23,8 +23,8 @@
 
 Mais informações sobre os projetos T2Ti ERP podem ser vistos nos links a seguir:
 	<br />
-  http://t2ti.com/erp/
-  http://t2ti.com/erp2/
+  http://t2ti.com/erp/ <br />
+  http://t2ti.com/erp2/ <br />
   http://t2ti.com/erp3/
 	<br /><br />
 <hr />
